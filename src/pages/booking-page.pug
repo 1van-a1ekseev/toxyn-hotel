@@ -1,0 +1,121 @@
+doctype html
+html(lang='ru')
+    head 
+        meta(charset='utf-8')
+        title TOXYN
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin)
+        link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap' rel='stylesheet') 
+        link(rel='stylesheet')
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin)
+        link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap')
+        link(rel='stylesheet')
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+        link(href=require('./booking-page.scss') rel='stylesheet')
+        link(href=require('../components/card/card.scss') rel='stylesheet')
+        link(href=require('../components/dropdown/dropdown.scss') rel='stylesheet')
+        link(href=require('../components/header/header.scss') rel='stylesheet')
+        link(href=require('../components/logo/logo.scss') rel='stylesheet')
+    body(class='body')
+        header(class='header') 
+            include ../components/logo/logo.html
+            div(class='navig')
+                div(class='nav')
+                    a О нас
+                    |
+                    a Услуги
+                    |
+                    a Вакансии
+                    |
+                    a Новости
+                    |
+                    a Соглашения
+                div(class='sign-in-up')
+                    buttton(class='sign-in-btn')
+                        span(class='sign-in-text') ВОЙТИ
+                    button(class='sign-up-btn') ЗАРЕГИСТРИРОВАТЬСЯ
+        img(class='backgroundphoto' src=require('../components/img/image3.jpg'))
+        main 
+            div(class='card')
+                div
+                    header 
+                    h1(class='card-title')  Найдём номера под ваши пожелания
+                div(class='dropdown')
+                    div(class='dropdown-item')
+                        p(class='label-text') ПРИБЫТИЕ
+                        div(class='dropdown-container')
+                            include ../components/dropdown/dropdown.html
+                            p ДД.ММ.ГГГГ
+                    div(class='dropdown-item')
+                        p(class='label-text') ВЫЕЗД
+                        div(class='dropdown-container')
+                            include ../components/dropdown/dropdown.html
+                            p ДД.ММ.ГГГГ
+                div(class='dropdown')
+                    div(class='dropdown-item')
+                        p(class='label-text') ГОСТИ
+                        div(class='dropdown-container')
+                            include ../components/dropdown/dropdown.html
+                            p Сколько гостей?
+                button(class='submit-btn') ПОДОБРАТЬ НОМЕР
+                        include ../components/card/submit-arrow.html
+        footer  
+            
+            div(class='raw')
+                div(class='nav')
+                    div(id='content')
+                        div
+                            include ../components/logo/logo2.html
+                        a  Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+                    div(id='content')
+                        p(class='label-text') НАВИГАЦИЯ
+                        |
+                        a О нас
+                        |
+                        a Новости
+                        |
+                        a Служба поддержки
+                        |
+                        a Услуги
+                    div(id='content')
+                        p(class='label-text') О НАС
+                        |
+                        a О сервисе
+                        |
+                        a Наша команда
+                        |
+                        a Вакансии
+                        |
+                        a Инвесторы
+                    div 
+                        p(class='label-text') СЛУЖБА ПОДДЕРЖКИ
+                        |
+                        a Соглашения
+                        |
+                        a Сообщества
+                        |
+                        a Связь с нами
+                    div(id='content')
+                        p(class='label-text') ПОДПИСКА
+                        |
+                        a Получайте специальные предложения и новости сервиса
+            div(class='copyright')
+                a(class='nav') Copyright © 2018 Toxin отель. Все права защищены.
+                div(class='socials')
+                    a(href="#" class="fa fa-facebook social-link") 
+                    |
+                    a(href="#" class="fa fa-twitter social-link")  
+                    |
+                    a(href="#" class="fa fa-instagram social-link")
+
+
+
+                
+
+
+
+
+
+
+            

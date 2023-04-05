@@ -1,0 +1,1 @@
+import './image3.jpg'
